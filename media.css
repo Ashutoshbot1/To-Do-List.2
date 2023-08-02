@@ -1,0 +1,51 @@
+@media screen and (max-width:800px) {
+    :root{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    :root{
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    :root{
+        font-size: 1.5vw;
+    }
+}
+
+
+
+@media screen and (max-width:370px) {
+    :root{
+        font-size: 1.5vw;
+    }
+
+    .todo-app{
+        width: 100%;
+        max-width: 90vw;
+        background-color: #fff;
+        margin: 10rem auto 2rem;
+        padding: 4rem 3rem 7rem;
+        border-radius: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width:300px) {
+    :root{
+        font-size: 1.5vw;
+    }
+
+    .todo-app{
+        width: 100%;
+        max-width: 90vw;
+        background-color: #fff;
+        margin: 10rem auto 2rem;
+        padding: 4rem 3rem 7rem;
+        border-radius: 1rem;
+    }
+} 

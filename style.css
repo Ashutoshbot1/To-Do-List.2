@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 1rem;
+
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 54rem;
+    background-color: #fff;
+    margin: 10rem auto 2rem;
+    padding: 4rem 3rem 7rem;
+    border-radius: 1rem;
+}
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.todo-app h2 img{
+    width:3rem;
+    margin-left: 1rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 3rem;
+    padding-left:2rem;
+    margin-bottom: 2.5rem;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1rem;
+    font-weight: 1.4rem;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding:1.6rem 5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 4rem;
+    background: #ff5945;
+}
+
+ul li{
+    /* border: 2px solid; */
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 1.2rem .8rem 1.2rem 5rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    text-transform: capitalize;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 1.35rem;
+    left: .8rem;
+}
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+li span{
+    /* border:2px solid; */
+    position: absolute;
+    top:1.7rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .4rem .7rem;
+    border-radius: 50%;
+    transition: background .3s ease-out;
+    
+}
+
+li span:hover{
+    background: #edeef0;
+}
